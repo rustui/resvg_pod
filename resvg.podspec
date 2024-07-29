@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'resvg'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of resvg.'
+  s.summary          = 'An SVG rendering library.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,19 +18,21 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A tiny and fast SVG rendering library.
                        DESC
 
-  s.homepage         = 'https://github.com/rustui/resvg'
+  s.homepage         = 'https://github.com/rustui/resvg_pod'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'rustui' => '90625190+rustui@users.noreply.github.com' }
-  s.source           = { :git => 'https://github.com/rustui/resvg.git', :tag => s.version.to_s }
+  s.source = { :http => 'https://github.com/rustui/resvg_action/releases/download/v0.42.0/libresvg.zip'  }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
+  s.vendored_libraries = 'libresvg.a'
+  s.swift_version = '5.0'
 
-  s.source_files = 'resvg/Classes/**/*'
+  # s.source_files = 'resvg/Classes/**/*'
   
   # s.resource_bundles = {
   #   'resvg' => ['resvg/Assets/*.png']

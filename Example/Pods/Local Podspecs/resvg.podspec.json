@@ -1,0 +1,22 @@
+{
+  "name": "resvg",
+  "version": "0.1.0",
+  "summary": "A short description of resvg.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/rustui/resvg",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "rustui": "90625190+rustui@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/rustui/resvg.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "resvg/Classes/**/*"
+}
