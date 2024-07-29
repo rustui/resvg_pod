@@ -1,0 +1,6 @@
+use_frameworks!
+target 'resvg_Tests' do
+  pod 'resvg', :path => '../'
+  
+  
+end
