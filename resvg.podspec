@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'resvg'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'An SVG rendering library.'
 
 # This description is used to generate tags and improve search results.
@@ -22,23 +22,13 @@ A tiny and fast SVG rendering library.
                        DESC
 
   s.homepage         = 'https://github.com/rustui/resvg_pod'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'rustui' => '90625190+rustui@users.noreply.github.com' }
-  s.source = { :http => 'https://github.com/rustui/resvg_action/releases/download/v0.42.0/libresvg.zip'  }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source = { :http => 'https://github.com/rustui/resvg_action/releases/download/v0.42.0/resvg.xcframework.zip'  }
 
-  s.ios.deployment_target = '10.0'
-  s.vendored_libraries = 'libresvg.a'
+  s.ios.deployment_target = '12.0'
+  s.osx.deployment_target = '10.13'
+  s.vendored_frameworks = 'resvg.xcframework'
   s.swift_version = '5.0'
 
-  # s.source_files = 'resvg/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'resvg' => ['resvg/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
